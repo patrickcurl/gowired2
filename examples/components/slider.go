@@ -1,8 +1,6 @@
 package components
 
-import (
-	"github.com/brendonmatos/golive"
-)
+import "github.com/brendonmatos/golive"
 
 type Slider struct {
 	golive.LiveComponentWrapper
@@ -31,6 +29,6 @@ func (t *Slider) TemplateHandler(_ *golive.LiveComponent) string {
 				<div style="background-color: red; width: {{ .Size2 }}px; height: {{.Size2}}px" >
 				</div>
 			</div>
-		</div>	
+		</div>
 	`
 }

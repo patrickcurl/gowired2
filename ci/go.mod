@@ -1,4 +1,4 @@
-module github.com/brendonferreira/golive/ci
+module github.com/patrickcurl/gowired/ci
 
 go 1.15
 

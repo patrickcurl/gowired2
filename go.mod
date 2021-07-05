@@ -1,4 +1,4 @@
-module github.com/brendonmatos/golive
+module github.com/patrickcurl/gowired
 
 go 1.15
 

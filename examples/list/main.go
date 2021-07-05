@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/brendonmatos/golive"
+	"github.com/patrickcurl/gowired"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
 )
@@ -108,7 +108,7 @@ func (b *Books) TemplateHandler(_ *golive.LiveComponent) string {
 					<option value="{{$writer}}">{{$writer}}</option>
 				{{ end }}
 			</select>
-					
+
 			<div>
 				{{ range $index, $Book := .GetFilteredList }}
 					<div style="border: 1px solid black; padding: 10px;" key="{{$index}}">
@@ -117,7 +117,7 @@ func (b *Books) TemplateHandler(_ *golive.LiveComponent) string {
 					</div>
 				{{ end }}
 			</div>
-		</div>	
+		</div>
 	`
 }
 

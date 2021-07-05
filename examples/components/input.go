@@ -17,7 +17,7 @@ func (d *DynamicInput) TemplateHandler(_ *golive.LiveComponent) string {
 	return `
 		<div>
 			<input type="string" go-live-input="Label" />
-			<span>{{.Label}}</span>	
+			<span>{{.Label}}</span>
 		</div>
 	`
 }

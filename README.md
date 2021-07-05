@@ -1,12 +1,12 @@
-# GoLive 
+# GoLive
 ## 💻 Reactive HTML Server Side Rendered by GoLang over WebSockets 🚀
 Use Go and ***Zero JavaScript*** to program reactive front-ends!
 
 ![](examples/slider/slider.gif)
 
 ## How?
-1. Render Server Side HTML 
-2. Connect to same server using Websocket 
+1. Render Server Side HTML
+2. Connect to same server using Websocket
 3. Send user events
 4. Change state of [component](component.go) in server
 5. Render Component and get [diff](diff.go)
@@ -14,7 +14,7 @@ Use Go and ***Zero JavaScript*** to program reactive front-ends!
 
 ## Getting Started
 - [Extended Version Todo Example](https://github.com/SamHennessy/golive-example)
-- [Project Examples](https://github.com/brendonmatos/golive/tree/master/examples)
+- [Project Examples](https://github.com/patrickcurl/gowired/tree/master/examples)
 - [GoBook - Interactive Go REPL in browser](https://github.com/brendonmatos/gobook)
 
 **Any suggestions are absolutely welcome**
@@ -23,10 +23,10 @@ This project it's strongly inspired by Elixir Phoenix LiveView.
 
 ## Component Example
 ```go
-package components 
+package components
 
 import (
-	"github.com/brendonmatos/golive"
+	"github.com/patrickcurl/gowired"
 	"time"
 )
 
@@ -60,12 +60,12 @@ func (t *Clock) TemplateHandler(_ *golive.LiveComponent) string {
 
 ### Server Example
 ```go
-  
+
 package main
 
 import (
-	"github.com/brendonmatos/golive"
-	"github.com/brendonmatos/golive/examples/components"
+	"github.com/patrickcurl/gowired"
+	"github.com/patrickcurl/gowired/examples/components"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
 )

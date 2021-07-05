@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/brendonmatos/golive"
-	components "github.com/brendonmatos/golive/examples/components"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
+	golive "github.com/patrickcurl/gowired"
+	components "github.com/patrickcurl/gowired/examples/components"
 )
 
 type Home struct {
