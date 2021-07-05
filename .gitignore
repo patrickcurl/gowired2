@@ -2,3 +2,4 @@ examples/todo/tmp/
 tmp/
 vendor/
 .idea
+node_modules/
